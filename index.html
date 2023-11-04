@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="header">
+                 <span>Progress</span>'Telenk'
+            <ul>
+                <li>PRODUCTS <i class='bx bxs-down-arrow'></i></li>
+                <li>ENTERPRISE</li>
+                <li>FREE TRIALS</li>
+                <li>PRICE</li>
+                <li>SUPPORT &   LEARNING</li>
+                <li>ABOUT US</li>
+                <li><i class='bx bx-search'></i></li>
+                <li>Your Account</li>
+                <li>Telvik Platform</li>
+            </ul>
+        </div>
+
+        
+        <div class="slider">
+            <img src="1.jpg" alt="" id="slideImg">
+            
+            <div class="text-1">
+                <h1>Develop Experiences (Slide-1)</h1>
+                <span>  Ul frameworks and app development tools that 2.1 million developers love</span>
+                <div class="butt">
+                <i class='bx bx-chevron-down-circle'></i>
+                </div>
+            </div>
+            <div class="text-2">
+                <h1>Develop Experiences (Slide-2)</h1>
+                <span>  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates quos ipsa vel maxime quasi fugiat hic id v</span>
+                <div class="butt">
+                <i class='bx bx-chevron-down-circle'></i>
+                </div>
+            </div>
+            <div class="text-3">
+                <h1>Develop Experiences (Slide-3)</h1>
+                <span> Albem ipsum dolor sit amet consectetur  Ul frameworks and app development tools that 2.1 million developers love</span>
+                <div class="butt">
+                <i class='bx bx-chevron-down-circle'></i>
+                </div>
+            </div>
+            <div class="text-4">
+                <h1>Develop Experiences (Slide-4)</h1>
+                <span> Albem ipsum dolor sit amet consectetur  Ul frameworks and app development tools that 2.1 million developers love</span>
+                <div class="butt">
+                <i class='bx bx-chevron-down-circle'></i>
+                </div>
+            </div>
+            <div class="text-5">
+                <h1>Develop Experiences (Slide-5)</h1>
+                <span> Albem ipsum dolor sit amet consectetur  Ul frameworks and app development tools that 2.1 million developers love</span>
+                <div class="butt">
+                <i class='bx bx-chevron-down-circle'></i>
+                </div>
+            </div>
+
+          </div>
+        </div>
+          <div class="btn">
+            <span id="back"><</span>
+            <span id="next">></span>
+            </div>
+           
+    </div>
+    <div class="footer">
+         <div class="footer-1">
+           <div class="h1">
+            NET
+           </div>
+           <div class="h2">
+            DevCraft
+           </div>
+           <div class="data">
+            .NET Ul controls, reporting and <br> developer productivity tools
+           </div>
+           <button>Learn More</button>
+         </div>  
+         <div class="footer-1">
+            <div class="h1">
+                NATIVE MOBILE
+            </div>
+            <div class="h2">
+                NativeScript
+            </div>
+            <div class="data">
+               Open source framework for buliding lruly native mobile apps with Angular.TypeScript or JavaScript
+            </div>
+            <button>Learn More</button>
+          </div> 
+          <div class="footer-1">
+            <div class="h1">
+             NET
+            </div>
+            <div class="h2">
+             DevCraft
+            </div>
+            <div class="data">
+             .NET Ul controls, reporting and <br> developer productivity tools
+            </div>
+            <button>Learn More</button>
+          </div> 
+          <div class="footer-1">
+            <div class="h1">
+             NET
+            </div>
+            <div class="h2">
+             DevCraft
+            </div>
+            <div class="data">
+             .NET Ul controls, reporting and <br> developer productivity tools
+            </div>
+            <button>Learn More</button>
+          </div> 
+          <div class="footer-1">
+            <div class="h1">
+             NET
+            </div>
+            <div class="h2">
+             DevCraft
+            </div>
+            <div class="data">
+             .NET Ul controls, reporting and <br> developer productivity tools
+            </div>
+            <button>Learn More</button>
+          </div> 
+          <div class="footer-1">
+            <div class="h1">
+             NET
+            </div>
+            <div class="h2">
+             DevCraft
+            </div>
+            <div class="data">
+             .NET Ul controls, reporting and <br> developer productivity tools
+            </div>
+            <button>Learn More</button>
+          </div> 
+    </div>
+     <script>
+        const next=document.getElementById('next');
+        const back=document.getElementById('back');
+        const slideImg=document.getElementById('slideImg');
+        const text1=document.querySelector('.text-1');
+        const text2=document.querySelector('.text-2');
+        const text3=document.querySelector('.text-3');
+        const text4=document.querySelector('.text-4');
+        const text5=document.querySelector('.text-5');
+        
+        var counting=0  ;
+        next.addEventListener('click',()=>{
+            counting++;
+            slideImg.setAttribute('src',`${counting}.jpg`);
+
+            if (counting==1){
+                text1.style.display="block";
+                text2.style.display="none";
+                text3.style.display="none";
+                text4.style.display="none";
+                text5.style.display="none";
+            }
+            if (counting==2){
+                text1.style.display="none";
+                text2.style.display="block";
+                text3.style.display="none";
+                text4.style.display="none";
+                text5.style.display="none";
+            }
+            if (counting==3){
+                text1.style.display="none";
+                text2.style.display="none";
+                text3.style.display="block";
+                text4.style.display="none";
+                text5.style.display="none";
+            }
+            if (counting==4){
+                text1.style.display="none";
+                text2.style.display="none";
+                text3.style.display="none";
+                text4.style.display="block";
+                text5.style.display="none";
+            }
+            if (counting==5){
+                text1.style.display="none";
+                text2.style.display="none";
+                text3.style.display="none";
+                text4.style.display="none";
+                text5.style.display="block";
+            }
+            if(counting==5){
+                counting=0;
+            }
+        })
+back.addEventListener('click',()=>{
+    counting--;
+            slideImg.setAttribute('src',`${counting}.jpg`);
+
+            if (counting==5){
+                text1.style.display="block";
+                text2.style.display="none";
+                text3.style.display="none";
+                text4.style.display="none";
+                text5.style.display="none";
+            }
+            if (counting==4){
+                text1.style.display="none";
+                text2.style.display="block";
+                text3.style.display="none";
+                text4.style.display="none";
+                text5.style.display="none";
+    
+            if (counting==3){
+                text1.style.display="none";
+                text2.style.display="none";
+                text3.style.display="block";
+                text4.style.display="none";
+                text5.style.display="none";
+            }
+            if (counting==2){
+                text1.style.display="none";
+                text2.style.display="none";
+                text3.style.display="none";
+                text4.style.display="block";
+                text5.style.display="none";
+            }
+            if (counting==1){
+                text1.style.display="none";
+                text2.style.display="none";
+                text3.style.display="none";
+                text4.style.display="none";
+                text5.style.display="block";
+            }
+            if(counting==5){
+                counting=5;
+            }
+        })
+       
+    
+    </script>
+</body>
+</html>
